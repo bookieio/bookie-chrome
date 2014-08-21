@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="combo.css" type="text/css" charset="utf-8">
         <link rel="stylesheet" href="lib/base.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="fontawesome/css/font-awesome.css" type="text/css" charset="utf-8">
         <style>
             body.form {
                 font-family: sans-serif;
@@ -69,6 +70,7 @@
                     <li id="suggested_tags">Suggested Tags: <span id="latest_tags"></span></li>
                     <li><textarea placeholder="notes" name="extended"
                         id="extended" style="height: 5em;"></textarea></li>
+                    <li><i class="fa fa-lock"></i>&nbsp;Private&nbsp;<input type="checkbox" id="is_private" name="is_private" /></li>
                     <li>
                         <button type="submit" id="submit" class="button">Save</button>
                         <button type="button" id="delete" class="button" style="display: none;">Delete</button>

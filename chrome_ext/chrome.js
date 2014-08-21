@@ -100,7 +100,8 @@ YUI().add('bookie-chrome', function (Y) {
                     return t.get('text');
                 }),
                 extended: Y.one('#extended').get('value'),
-                content: Y.one('textarea#content').get('value')
+                content: Y.one('textarea#content').get('value'),
+                is_private: Y.one('#is_private').get('checked')
             });
 
             // should just be able to fire the save method on the model and
@@ -152,6 +153,7 @@ YUI().add('bookie-chrome', function (Y) {
             Y.one('#tag_filter').set('value', model.get('tag_str'));
             Y.one('#extended').set('value', model.get('extended'));
             Y.one('#inserted_by').set('value', 'chrome_ext');
+            Y.one('#is_private').set('checked', model.get('is_private'));
 
             // make the tag field a TagControl, but only if it's not already one.
             // Once this is done, we need to make sure we update the tags from
