@@ -737,12 +737,12 @@ YUI.add('bookie-model', function (Y) {
 
             /**
              * @attribute api_url
-             * @default 'https://bmark.us'
+			 * @default 'https://bookie.io'
              * @type String
              *
              */
             api_url: {
-                value: 'https://bmark.us/api/v1'
+                value: 'https://bookie.io/api/v1'
             },
 
             /**
